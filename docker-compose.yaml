@@ -113,7 +113,7 @@ services:
       - workspace:${WORKSPACE_ROOT}
       - ${LOCAL_ROOT}:${LOCAL_ROOT}
   server:
-    image: airbyte/server:${VERSION}
+    image: docker.io/jdaviderb/airbyte-server:go1
     logging: *default-logging
     container_name: airbyte-server
     restart: unless-stopped
